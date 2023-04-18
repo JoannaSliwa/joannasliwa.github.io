@@ -1,47 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - PhD Student</title>
+  <title>Joanna Sliwa</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2em;
+      line-height: 1.6;
+      color: #333;
     }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
+
+    /* Navigation */
+    #navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    h2 {
-      font-size: 1.5em;
-      margin-top: 2em;
+
+    #navbar a {
+      display: inline-block;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: #f2f2f2;
+      transition: background-color 0.3s;
     }
-    p {
-      line-height: 1.5;
+
+    #navbar a:hover {
+      background-color: #555;
+    }
+
+    /* Sections */
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Profile Image */
+    .profile-image {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    /* CV Link */
+    .cv-link {
+      margin-top: 10px;
+    }
+
+    /* Buttons */
+    .button {
+      display: inline-block;
+      background-color: #333;
+      color: #f2f2f2;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    /* Lists with details */
+    .details-list li {
+      margin-bottom: 20px;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
+
 <body>
-  <h1>Joanna Sliwa</h1>
-  <p></p>
-  <p>Email: joanna.b.sliwa@gmail.com</p>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#education">Education</a>
+    <a href="#internships">Internships</a>
+  </nav>
 
-  <h2>About Me</h2>
-  <p></p>
+  <!-- About -->
+  <section id="about" class="section">
+    <h1>Your Name</h1>
+    <img class="profile-image" src="your-image-url.jpg" alt="Your Name">
+    <p>PhD Student at University Name</p>
+    <p>Email: your.email@example.com</p>
+    <p>Write a short bio about yourself, including your research interests and background.</p>
+    <a class="button cv-link" href="your-cv-url.pdf" target="_blank">View CV</a>
+  </section>
 
-  <h2>Publications</h2>
-  <ul>
-    <li>Publication 1, Journal Name, Year</li>
-  </ul>
+  <!-- Publications -->
+  <section id="publications" class="section">
+    <h2>Publications</h2>
+    <ul>
+      <li>
+        Publication 1, Journal Name, Year
+        <a class="button" href="publication1-link" target="_blank">Link</a>
+      </li>
+      <li>
+        Publication 2, Journal Name, Year
+        <a class="button" href="publication2-link" target="_blank">Link</a>
+      </li>
+    </ul>
+  </section>
 
-  <h2>Education</h2>
-  <ul>
-    <li>PhD, Field of Study, University Name, Year</li>
-    <li>Masters, Field of Study, University Name, Year</li>
-    <li>Bachelor, Field of Study, University Name, Year</li>
-  </ul>
+   <!-- Education -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul class="details-list">
+      <li>
+        <strong>PhD, Your Major</strong>, University Name, Year - Present
+      </li>
+      <li>
+        <strong>MSc, Your Major</strong>, University Name, Year - Year
+      </li>
+      <li>
+        <strong>BSc, Your Major</strong>, University Name, Year - Year
+      </li>
+    </ul>
+  </section>
+
+  <!-- Internships -->
+  <section id="internships" class="section">
+    <h2>Internships</h2>
+    <ul class="details-list">
+      <li>
+        <strong>Internship Title</strong>, Company Name, Year
+        <p>Keywords: Machine Learning, Deep Learning, Natural Language Processing</p>
+        <p>Short description of the internship, including your role and the project you worked on.</p>
+        <a class="button" href="report-link" target="_blank">Report</a>
+        <a class="button" href="github-repo-link" target="_blank">GitHub Repository</a>
+      </li>
+      <li>
+        <strong>Internship Title</strong>, Company Name, Year
+        <p>Keywords: Data Science, Big Data, Analytics</p>
+        <p>Short description of the internship, including your role and the project you worked on.</p>
+        <a class="button" href="report-link" target="_blank">Report</a>
+        <a class="button" href="github-repo-link" target="_blank">GitHub Repository</a>
+      </li>
+    </ul>
+  </section>
 </body>
+
 </html>
+
