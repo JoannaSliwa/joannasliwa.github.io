@@ -5,8 +5,8 @@
   list-style-type: none;
   }
 </style>
-
-<img src="./files/image.jpeg" alt="profile" width="33%"/>
+<div align="center">
+<img src="./files/image.jpeg" alt="profile" width="33%" style="border-radius: 50%;"/>
 
 <p>
 ELLIS & IMPRS-IS PhD Student at University Tübingen
@@ -19,7 +19,7 @@ ELLIS & IMPRS-IS PhD Student at University Tübingen
 [LinkedIn](https://www.linkedin.com/in/j-sliwa/) • 
 [Uni Tübingen](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/methoden-des-maschinellen-lernens/personen/) • 
 [Google Scholar](https://scholar.google.com/citations?user=88s4T-8AAAAJ&hl=pl) 
-
+</div>
 <br/> I work on continual learning, at the intersection of deep learning and probabilistic machine learning, I'm based at the group of Philipp Hennig.
 
 <h1>Research</h1>
