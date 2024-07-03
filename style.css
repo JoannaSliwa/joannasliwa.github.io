@@ -33,6 +33,59 @@ body {
     }
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: gray;
+}
+a:visited {
+    color: gray;
+}
+
+ .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .keyword-box {
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: gray;
+        }
+        a:visited {
+            color: gray;
+        }
+        .news-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .news-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+	}
+	.news-date {
+    width: 80px; /* Adjust width to ensure alignment */
+    font-weight: bold;
+    flex-shrink: 0; /* Prevent shrinking of the date element */
+	}
+	.news-content {
+    margin-left: 10px;
+    }
+    .no-bullet {
+            list-style-type: none;
+            padding: 0;}}
+
 
 .icons {
 list-style-type: none;
