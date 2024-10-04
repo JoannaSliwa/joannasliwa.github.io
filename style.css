@@ -120,6 +120,7 @@ a:visited {
 
     .publication-content {
         margin-left: 0; 
+        text-align: left;
     }
 }
 
