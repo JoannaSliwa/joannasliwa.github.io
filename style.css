@@ -149,8 +149,15 @@ a:visited {
     }
 
     .publication-image {
-        width: 180px; 
+        width: 180px;
+        height: auto;
         margin-right: 10px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+    }
+    
+    .publication-image:hover {
+        transform: scale(1.2); /* Enlarge the image by 20% on hover */
     }
 
     .publication-content {
