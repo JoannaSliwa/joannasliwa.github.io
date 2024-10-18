@@ -132,8 +132,16 @@ a:visited {
     }
 
     .publication-image {
-        width: 150px; 
+        width: 150px;
+        height: auto;
         margin-right: 10px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: left center;
+    }
+    
+    .publication-image:hover {
+        transform: scale(2.5);
     }
 
     .publication-content {
@@ -157,7 +165,7 @@ a:visited {
     }
     
     .publication-image:hover {
-        transform: scale(1.2); /* Enlarge the image by 20% on hover */
+        transform: scale(2.5); /* Enlarge the image by 20% on hover */
     }
 
     .publication-content {
