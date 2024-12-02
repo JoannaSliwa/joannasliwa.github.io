@@ -38,36 +38,59 @@
         
         </div>
 
-        <h1>Research</h1>
+        <h2>Research</h2>
         <p>The currently prevailing practice is to evaluate network performance solely by the attained final validation loss/accuracy. By acknowledging the probabilistic nature of the problem, constructing and leveraging uncertainty, I aim to generalise training to realistic and practically relevant settings like continual learning. This requires algorithmic advances to enhance efficiency through matrix-free, compressed, iterative linear algebra, but also the establishment of new design patterns in deep learning, like Kalman filtering on the weight-space.</p>
         <p>Before my PhD, I was working in the field of causality, mainly exploring how to solve causal representation learning where the sources generate observations via a nonlinear transformation. During my education, I was studying various topics in computational neuroscience such as Brain Computer Interfaces, constructing 3D brain atlas and neuron simulation.</p>
 
-        <h1>Publications</h1>
+        <h2>Preprints</h2>
         <ul class="no-bullet publication-list">
             <li>
                 <img src="files/cl.png" alt="Publication Image" class="publication-image">
                 <div class="publication-content">
                     <strong>Efficient Weight-Space Laplace-Gaussian Filtering and Smoothing for Sequential Deep Learning</strong><br/>
                     J Sliwa, F Schneider, N Bosch, A Kristiadi, P Hennig<br/>
-                    Preprint 
+                    2024 
                     • <a href="https://arxiv.org/abs/2410.06800"><i class="ai ai-arxiv"></i> arXiv</a> 
-                    • <a href="https://github.com/a90952852/lr-lgf"><i class="fab fa-github"></i> GitHub</a>
+                    • <a href="https://github.com/a90952852/lr-lgf"><i class="fab fa-github"></i> GitHub</a><br/>
+                    
+                    <!-- Toggle for TLDR -->
+                    <label class="tldr-toggle" for="tldr-checkbox1"> Easy-to-Understand Summary</label>
+                    <input type="checkbox" id="tldr-checkbox1" class="tldr-checkbox">
+                    <div class="tldr-content">
+                       Imagine teaching a computer to spot tumor cells. As it learns from different hospitals, each with unique imaging styles, the computer forgets what it previously learned (e.g. in hospital 1, while learning images from hospital 5). Our method helps the model to remember its past knowledge while still learning new things efficiently.
+<!-- Teaching a neural network multiple tasks, like recognizing images from different hospitals, one after another is challenging because the model tends to forget what it learned earlier when focusing on new tasks. Our method uses a Bayesian approach to help the model remember past knowledge while adapting to new tasks by understanding how they are related.-->
+                    </div>
                 </div>
             </li>
+        </ul>
 
+        <h2>Publications</h2>
+        <ul class="no-bullet publication-list">
             <li>
                 <img src="files/cocktail_party.png" alt="Publication Image" class="publication-image">
                 <div class="publication-content">
                     <strong>Probing the Robustness of Independent Mechanism Analysis for Representation Learning</strong><br/>
                     J Sliwa, S Ghosh, V Stimper, L Gresele, B Schölkopf<br/>
-                    First Causal Representation Learning Workshop at UAI 2022 
+                    2022
+                    • First Causal Representation Learning Workshop at UAI
                     • <a href="https://arxiv.org/abs/2207.06137"><i class="ai ai-arxiv"></i> arXiv</a> 
-                    • <a href="https://github.com/lgresele/independent-mechanism-analysis"><i class="fab fa-github"></i> GitHub</a>
+                    • <a href="https://github.com/lgresele/independent-mechanism-analysis"><i class="fab fa-github"></i> GitHub</a><br/>
+                    
+                    <!-- Toggle for TLDR -->
+                    <label class="tldr-toggle" for="tldr-checkbox2"> Easy-to-Understand Summary</label>
+                    <input type="checkbox" id="tldr-checkbox2" class="tldr-checkbox">
+                    <div class="tldr-content">
+
+                    Imagine teaching a computer to separate single voices from recordings of multiple people speaking in a crowded room. The method IMA, inspired by the concepts from the field of causality, has shown good results. Our work checks if the method still works when the conditions aren't perfectly met.
+                        <!--The IMA method helps identify underlying factors from observations, e.g., separating individual voices from a recording of several people speaking at once. We tested whether the method still works when the conditions it relies on aren’t perfectly met.-->
+                    </div>
                 </div>
             </li>
         </ul>
 
-        <h1>News</h1>
+        
+
+        <h2>News</h2>
         <ul class="news-list">
             <li>
                 <span class="news-date">06/2024</span>
@@ -87,7 +110,7 @@ Southampton</a></span>
                 <span class="news-content">started my PhD at <a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/methoden-des-maschinellen-lernens/start/">Methods of Machine Learning Group</a> at University of Tübingen with Philipp Hennig</span>
             </li>
         </ul>
-        Updated: October 2024
+        Updated: December 2024
         <h1></h1>
     </div>
 </html>

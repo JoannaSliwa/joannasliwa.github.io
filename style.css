@@ -125,6 +125,39 @@ a:visited {
     margin-left: 10px;
 }
 
+.publication-content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tldr-content {
+    font-size: 14px; /* Smaller font for TLDR */
+    color: grey; /* Grey text for TLDR */
+    margin-top: 10px;
+    display: none; /* Initially hide the TLDR content */
+}
+
+.tldr-checkbox:checked + .tldr-content {
+    display: block; /* Show TLDR when checkbox is checked */
+}
+
+.tldr-toggle {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #69696b;
+}
+
+.tldr-toggle:hover {
+    background-color: #e0e0e0;
+}
+
+.tldr-checkbox {
+    display: none; /* Hide the checkbox */
+}
+
+
 
 @media (max-width: 600px) {
     .publication-list li {
