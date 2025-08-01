@@ -48,6 +48,28 @@ body {
     opacity: 0.8;
 }
 
+
+.icons a:hover .openreview-icon {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(58%) saturate(575%) hue-rotate(183deg) brightness(94%) contrast(90%);
+}
+
+
+.openreview-icon {
+    width: 22px !important;
+    height: 22px !important; 
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    right: 1px;
+}
+
+.openreview-icon:hover {
+    opacity: 0.8;
+}
+
 @media screen and (max-width: 600px) {
     .container {
         padding: 0 10px;
@@ -120,6 +142,12 @@ a:visited {
     margin-right: 10px;
     flex-shrink: 0;
 }
+.publication-image2 {
+    width: 130px;
+    height: auto;
+    margin-right: 60px;
+    flex-shrink: 0;
+}
 
 .publication-content {
     margin-left: 10px;
@@ -172,6 +200,13 @@ a:visited {
         margin-bottom: 10px; 
     }
 
+    .publication-image2 {
+        width: 50%; 
+        height: auto; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
     .publication-content {
         margin-left: 0; 
         text-align: left;
@@ -189,6 +224,15 @@ a:visited {
         width: 150px;
         height: auto;
         margin-right: 10px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: left center;
+    }
+
+    .publication-image {
+        width: 130px;
+        height: auto;
+        margin-right: 30px;
         flex-shrink: 0;
         transition: transform 0.3s ease-in-out;
         transform-origin: left center;
@@ -217,8 +261,21 @@ a:visited {
         flex-shrink: 0;
         transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
     }
+
+    .publication-image2 {
+        width: 130px;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 40px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+    }
     
     .publication-image:hover {
+        transform: scale(2.5); /* Enlarge the image by 20% on hover */
+    }
+
+    .publication-image2:hover {
         transform: scale(2.5); /* Enlarge the image by 20% on hover */
     }
 
